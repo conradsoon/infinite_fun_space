@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>t.s.d.c.</title>
+    <style>
+      body {
+        font-family: "Courier New", Courier, monospace;
+        display: block; /* Changed from flex to block */
+        background-color: #fff;
+      }
+      .container,
+      .tools-section,
+      .real-datasets-section,
+      .experiments-section,
+      .synthetic-datasets-section {
+        border: 3px dashed #000;
+        padding: 20px;
+        margin: 0 auto;
+        margin-bottom: 20px; /* Add space between sections */
+        width: 90%; /* Adjusted for a bit more padding */
+        max-width: 800px; /* Max width for larger devices */
+        box-sizing: border-box; /* Include padding and border in the width */
+      }
+      .hyphens {
+        letter-spacing: 5px; /* Adjust spacing between hyphens */
+      }
+      .title {
+        font-size: 2em;
+        margin: 10px 0;
+      }
+      .description {
+        font-size: 1em;
+      }
+      /* Responsive styling */
+      @media (max-width: 768px) {
+        .title {
+          font-size: 1.5em;
+        }
+        .description {
+          font-size: 0.8em;
+        }
+      }
+      /* Additional media query for smaller devices */
+      @media (max-width: 480px) {
+        .container,
+        .tools-section,
+        .real-datasets-section,
+        .synthetic-datasets-section {
+          width: 95%; /* Allow more space for content on very small devices */
+        }
+        .title,
+        .description {
+          padding: 0 10px; /* Add some padding on the sides */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="hyphens">--------------------</div> -->
+      <div class="title"><h2>🍞 t.s.d.c.</h2></div>
+      <div class="description">
+        this is t.s.d.c (the singapore data company).<br />
+        we specialise in making datasets for ai models. our datasets are
+        lovingly hand-made, and crafted to ensure whatever downstream models you
+        make will be the best that they can be.
+      </div>
+    </div>
+    <!-- Tools Section -->
+    <div class="tools-section">
+      <h2>🛠️ our baking tools</h2>
+      <p>
+        behind every great bakery is a suite of top-notch tools. our kitchen is
+        equipped with the latest in data pre-processing, kneading algorithms
+        into shape, and visualization ovens to make your datasets rise to the
+        occasion.
+      </p>
+    </div>
+
+    <!-- Real Datasets Section -->
+    <div class="real-datasets-section">
+      <h2>🎨 artisanal datasets</h2>
+      <p>
+        sourced from the organic data fields of various industries, our
+        artisanal datasets are the whole grain bread of machine learning.
+        nutritious, hearty, and unrefined, they bring a rustic truth to your
+        ai's palate.
+      </p>
+    </div>
+
+    <!-- Synthetic Datasets Section -->
+    <div class="synthetic-datasets-section">
+      <h2>🤖 synthetic delights</h2>
+      <p>
+        for those with a taste for the sweeter side, our synthetic datasets
+        offer a dessert cart of possibilities. concocted from a recipe of
+        algorithms and imagination, they simulate the essence of real-world data
+        with a hint of vanilla abstraction.
+      </p>
+    </div>
+
+    <div class="experiments-section">
+      <h2>🧪 culinary experiments</h2>
+      <p>
+        in our culinary laboratory, we embark on random ai experiments that push
+        the boundaries of what's possible. from quirky ai recipes to
+        unconventional data dishes, our experiments are a taste of innovation.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-size: 5em; /* Adjusted for visual balance */
+    text-align: center;
+    width: 200px; /* Ensure this matches height for square cells */
+    height: 200px;
+    position: relative; /* Needed for absolute positioning within */
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible; /* Allow the rotated 'S' to overflow */
+    position: relative; /* Establish containing block for absolute positioning */
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+/* Adjust the borders so they don't double up */
+.cell:nth-child(1), .cell:nth-child(2) {
+    border-top: none;
+}
+
+.cell:nth-child(1), .cell:nth-child(3) {
+    border-left: none;
+}
+
+.rotate {
+    /* Remove flex styles to allow absolute positioning to take effect */
+    position: absolute;
+    top: 50%; /* Center vertically in the grid container */
+    left: 50%; /* Center horizontally in the grid container */
+    transform: translate(-50%, -50%) rotate(45deg); /* Adjust for rotation */
+    transform-origin: center center; /* Ensure rotation is around the center */
+}
+
+/* Optional: Ensuring content of the rotated cell stays within the grid */
+.cell.rotate::before {
+    content: '';
+    float: left;
+    padding-top: 100%;
+}
